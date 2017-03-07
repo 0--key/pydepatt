@@ -20,5 +20,25 @@
 *** Several examples
 *** Test suite
 * Structure
+  #+BEGIN_SRC shell :results output :exports results
+  tree -I '*~|#*'
+  #+END_SRC
+
+  #+RESULTS:
+  #+begin_example
+  .
+  ├── patterns
+  │   ├── behavioral
+  │   │   └── README.org
+  │   ├── creational
+  │   │   └── README.org
+  │   ├── README.org
+  │   └── structural
+  │       └── README.org
+  └── README.org
+
+  4 directories, 5 files
+#+end_example
+
 * Corollary
 
