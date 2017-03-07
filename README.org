@@ -5,7 +5,20 @@
 #+LANGUAGE: en
 #+STARTUP: showall
 * Intro
+** Intention
+   The aim and passion of this repository is a knowledge taxonomy.
+** Target audience
+   Anybody who are curious in studying and appreciate clarity simultaneously.
+** Contribution
+   Please feel free to do any corrections, amendments or suggestions.
+   /Keep clear, please./
 * Overview
+** Python3 only
+   It is a modern and seems would be the one actual soon.
+** Methodology
+*** Brief survey
+*** Several examples
+*** Test suite
 * Structure
 * Corollary
 
