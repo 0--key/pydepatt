@@ -1,5 +1,4 @@
 #+AUTHOR:    Anton S. Kosinov
-<<<<<<< HEAD
 #+TITLE:     Creational Patterns Desing
 #+SUBTITLE:  Brief description
 #+EMAIL:     a.s.kosinov@gmail.com
@@ -8,6 +7,9 @@
 #+PROPERTY:header-args python :results output :exports both
 
 * Common properties
+** They work on the basis of how objects can be created
+** They isolate the details of object creation
+** Code is independent of the type of object to be created
 
 * Samples
   #+BEGIN_SRC python
@@ -16,14 +18,3 @@
 
   #+RESULTS:
   : Its python src rendering test
-=======
-#+TITLE:     Python Creational Desing Patterns
-#+SUBTITLE:  exhaustive list
-#+EMAIL:     a.s.kosinov@gmail.com
-#+LANGUAGE: en
-#+STARTUP: showall
-
-* They work on the basis of how objects can be created
-* They isolate the details of object creation
-* Code is independent of the type of object to be created
->>>>>>> 138d8ed49a61e656ea61f2e710198e09980d0bd2
