@@ -4,3 +4,14 @@
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
 #+STARTUP: showall
+#+PROPERTY:header-args python :results output :exports both
+
+* Common properties
+
+* Samples
+  #+BEGIN_SRC python
+  print("Its python src rendering test")
+  #+END_SRC
+
+  #+RESULTS:
+  : Its python src rendering test
