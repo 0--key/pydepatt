@@ -1,6 +1,6 @@
 #+AUTHOR:    Anton S. Kosinov
-#+TITLE:     Python Desing Patterns
-#+SUBTITLE:  exhaustive list
+#+TITLE:     Creational Patterns Desing
+#+SUBTITLE:  Brief description
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
 #+STARTUP: showall
