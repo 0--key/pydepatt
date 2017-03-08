@@ -6,10 +6,10 @@
 #+STARTUP: showall
 #+PROPERTY:header-args :results output :exports both
 
-* Common properties
-** They work on the basis of how objects can be created
-** They isolate the details of object creation
-** Code is independent of the type of object to be created
+- Common properties
+  + They work on the basis of how objects can be created
+  + They isolate the details of object creation
+  + Code is independent of the type of object to be created
 
 * Samples
   #+BEGIN_SRC python
