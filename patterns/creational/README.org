@@ -4,7 +4,7 @@
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
 #+STARTUP: showall
-#+PROPERTY:header-args python :results output :exports both
+#+PROPERTY:header-args :results output :exports both
 
 * Common properties
 ** They work on the basis of how objects can be created
