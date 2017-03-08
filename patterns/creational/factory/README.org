@@ -1,0 +1,8 @@
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     Python Factory Pattern
+#+SUBTITLE:  exhaustive list
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+STARTUP: showall
+
+#+INCLUDE: "pet_factory.py" src python
