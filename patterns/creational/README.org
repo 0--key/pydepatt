@@ -12,9 +12,35 @@
   + Code is independent of the type of object to be created
 
 * Samples
-  #+BEGIN_SRC python
-  print("Its python src rendering test")
-  #+END_SRC
 
-  #+RESULTS:
-  : Its python src rendering test
+** Simple
+   #+BEGIN_SRC python
+   print("Its python src rendering test")
+   #+END_SRC
+
+   #+RESULTS:
+   : Its python src rendering test
+
+** Indentation hightlight
+   #+BEGIN_SRC python
+     for i in range (0, 12, 2):
+         print('Next string')
+         # comments there
+         print(i)
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   Next string
+   0
+   Next string
+   2
+   Next string
+   4
+   Next string
+   6
+   Next string
+   8
+   Next string
+   10
+#+end_example
