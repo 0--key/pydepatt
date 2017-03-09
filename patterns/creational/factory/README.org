@@ -1,8 +1,8 @@
 #+AUTHOR:    Anton S. Kosinov
-#+TITLE:     Python Factory Pattern
-#+SUBTITLE:  exhaustive list
+#+TITLE:     A factory design sample
+#+SUBTITLE:  pet yields by the factory
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
 #+STARTUP: showall
+#+PROPERTY:header-args :results output :exports both
 
-#+INCLUDE: "pet_factory.py" src python
