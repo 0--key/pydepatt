@@ -21,7 +21,7 @@
 *** Test suite
 * Structure
   #+BEGIN_SRC shell :results output :exports results
-  tree -I '*~|#*'
+  tree -I '*~|#*|*.pyc|__pycache__'
   #+END_SRC
 
   #+RESULTS:
@@ -33,14 +33,15 @@
   │   ├── creational
   │   │   ├── factory
   │   │   │   ├── pet_factory.py
-  │   │   │   └── README.org
+  │   │   │   ├── README.org
+  │   │   │   └── test_pet_factory.py
   │   │   └── README.org
   │   ├── README.org
   │   └── structural
   │       └── README.org
   └── README.org
 
-  5 directories, 7 files
+  5 directories, 8 files
 #+end_example
 
 * Corollary
