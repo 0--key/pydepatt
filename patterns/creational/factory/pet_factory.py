@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This is a sample tangled content
+A pet factory abstraction
 """
+
+
 class Dog(object):
     """A simple dog class"""
 
