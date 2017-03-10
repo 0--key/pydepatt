@@ -34,14 +34,15 @@
   │   │   ├── factory
   │   │   │   ├── pet_factory.py
   │   │   │   ├── README.org
-  │   │   │   └── test_pet_factory.py
+  │   │   │   ├── test_pet_factory.py
+  │   │   │   └── weapon_factory.py
   │   │   └── README.org
   │   ├── README.org
   │   └── structural
   │       └── README.org
   └── README.org
 
-  5 directories, 8 files
+  5 directories, 9 files
 #+end_example
 
 * Corollary
