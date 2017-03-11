@@ -98,6 +98,8 @@
   </tr>
   </tbody>
   #+END_HTML
+
+
 *** Weapon factory
   #+BEGIN_HTML
   <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
