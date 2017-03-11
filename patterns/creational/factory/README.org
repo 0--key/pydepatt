@@ -20,13 +20,8 @@
 </thead>
 <tbody>
 <tr>
-<td class="org-left">#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/factory/README.org::pet_factory"</td>
-<td class="org-left">#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/factory/README.org::test_pet_factory"</td>
-</tr>
-</tbody>
+<td class="org-left">
 #+END_HTML
-
-*Code*
 #+BEGIN_SRC python :tangle pet_factory.py
   #!/usr/bin/env python
   # -*- coding: utf-8 -*-
@@ -70,7 +65,9 @@
 : Woof!
 : Meow!
 
-*Test suite*
+#+BEGIN_HTML
+<td class="org-left">
+#+END_HTML
 #+BEGIN_SRC python :tangle test_pet_factory.py
   #!/usr/bin/env python
   # -*- coding: utf-8 -*-
@@ -96,3 +93,11 @@
 #+RESULTS:
 : Woof!
 : Meow!
+
+#+BEGIN_HTML
+</tr>
+</tbody>
+#+END_HTML
+
+*Code*
+*Test suite*
