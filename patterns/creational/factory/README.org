@@ -6,6 +6,26 @@
 #+STARTUP: showall
 #+PROPERTY:header-args :results output :exports both
 
+#+BEGIN_HTML 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col  class="org-left" />
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Pattern code</th>
+<th scope="col" class="org-left">Test suite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/factory/README.org::pet_factory"</td>
+<td class="org-left">#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/factory/README.org::test_pet_factory"</td>
+</tr>
+</tbody>
+#+END_HTML
+
 *Code*
 #+BEGIN_SRC python :tangle pet_factory.py
   #!/usr/bin/env python
