@@ -5,96 +5,96 @@
 #+LANGUAGE: en
 #+STARTUP: showall
 #+PROPERTY:header-args :results output :exports both
-
-#+BEGIN_HTML 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup>
-<col  class="org-left" />
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Pattern code</th>
-<th scope="col" class="org-left">Test suite</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">
-#+END_HTML
-#+BEGIN_SRC python :tangle pet_factory.py
-  #!/usr/bin/env python
-  # -*- coding: utf-8 -*-
-  """
-  A pet factory abstraction
-  """
-
-
-  class Dog(object):
-      """A simple dog class"""
-
-      def __init__(self, name):
-          self._name = name
-
-      def speak(self):
-          return "Woof!"
+*** Pet factory
+  #+BEGIN_HTML
+  <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+  <colgroup>
+  <col  class="org-left" />
+  <col  class="org-left" />
+  </colgroup>
+  <thead>
+  <tr>
+  <th scope="col" class="org-left">Pattern code</th>
+  <th scope="col" class="org-left">Test suite</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td class="org-left">
+  #+END_HTML
+  #+BEGIN_SRC python :tangle pet_factory.py
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+    """
+    A pet factory abstraction
+    """
 
 
-  class Cat(object):
-      """A simple cat class"""
+    class Dog(object):
+        """A simple dog class"""
 
-      def __init__(self, name):
-          self._name = name
+        def __init__(self, name):
+            self._name = name
 
-      def speak(self):
-          return "Meow!"
-
-
-  def spawn_pet(pet="dog"):
-      """The factory method"""
-      pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
-      return pets[pet]
-
-  d = spawn_pet("dog")
-  print(d.speak())
-  c = spawn_pet("cat")
-  print(c.speak())
-#+END_SRC
-
-#+RESULTS:
-: Woof!
-: Meow!
-
-#+BEGIN_HTML
-<td class="org-left">
-#+END_HTML
-#+BEGIN_SRC python :tangle test_pet_factory.py
-  #!/usr/bin/env python
-  # -*- coding: utf-8 -*-
-  """
-  An attempt to illustrate how pet_factory works
-  """
-  import unittest
-  from pet_factory import Dog, Cat, spawn_pet
+        def speak(self):
+            return "Woof!"
 
 
-  class TestPetBehavior(unittest.TestCase):
+    class Cat(object):
+        """A simple cat class"""
 
-      def setUp(self):
-          self.D = Dog('Hound')
+        def __init__(self, name):
+            self._name = name
 
-      def test_dog_init_name(self):
-          self.assertEqual(self.D._name, 'Hound')
+        def speak(self):
+            return "Meow!"
 
-      def test_dog_speak_ability(self):
-          self.assertEqual(self.D.speak(), 'Woof!')
-#+END_SRC
 
-#+RESULTS:
-: Woof!
-: Meow!
+    def spawn_pet(pet="dog"):
+        """The factory method"""
+        pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
+        return pets[pet]
 
-#+BEGIN_HTML
-</tr>
-</tbody>
-#+END_HTML
+    d = spawn_pet("dog")
+    print(d.speak())
+    c = spawn_pet("cat")
+    print(c.speak())
+  #+END_SRC
+
+  #+RESULTS:
+  : Woof!
+  : Meow!
+
+  #+BEGIN_HTML
+  <td class="org-left">
+  #+END_HTML
+  #+BEGIN_SRC python :tangle test_pet_factory.py
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+    """
+    An attempt to illustrate how pet_factory works
+    """
+    import unittest
+    from pet_factory import Dog, Cat, spawn_pet
+
+
+    class TestPetBehavior(unittest.TestCase):
+
+        def setUp(self):
+            self.D = Dog('Hound')
+
+        def test_dog_init_name(self):
+            self.assertEqual(self.D._name, 'Hound')
+
+        def test_dog_speak_ability(self):
+            self.assertEqual(self.D.speak(), 'Woof!')
+  #+END_SRC
+
+  #+RESULTS:
+  : Woof!
+  : Meow!
+
+  #+BEGIN_HTML
+  </tr>
+  </tbody>
+  #+END_HTML
