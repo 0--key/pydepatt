@@ -6,7 +6,7 @@
 #+STARTUP: showall
 #+PROPERTY:header-args :results output :exports both
 
-#+BEGIN_HTML 
+#+BEGIN_EXPORT html 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup>
 <col  class="org-left" />
@@ -21,7 +21,7 @@
 <tbody>
 <tr>
 <td class="org-left">
-#+END_HTML
+#+END_EXPORT 
 #+BEGIN_SRC python :tangle pet_factory.py
   #!/usr/bin/env python
   # -*- coding: utf-8 -*-
@@ -65,9 +65,9 @@
 : Woof!
 : Meow!
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 <td class="org-left">
-#+END_HTML
+#+END_EXPORT
 #+BEGIN_SRC python :tangle test_pet_factory.py
   #!/usr/bin/env python
   # -*- coding: utf-8 -*-
@@ -94,10 +94,7 @@
 : Woof!
 : Meow!
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 </tr>
 </tbody>
-#+END_HTML
-
-*Code*
-*Test suite*
+#+END_EXPORT
