@@ -1,6 +1,10 @@
 #+AUTHOR:    Anton S. Kosinov
-#+TITLE:     Python Desing Patterns
+#+TITLE:     Python Creational Desing Patterns
 #+SUBTITLE:  exhaustive list
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
 #+STARTUP: showall
+
+* They work on the basis of how objects can be created
+* They isolate the details of object creation
+* Code is independent of the type of object to be created
