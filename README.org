@@ -31,13 +31,16 @@
   │   ├── behavioral
   │   │   └── README.org
   │   ├── creational
+  │   │   ├── factory
+  │   │   │   ├── pet_factory.py
+  │   │   │   └── README.org
   │   │   └── README.org
   │   ├── README.org
   │   └── structural
   │       └── README.org
   └── README.org
 
-  4 directories, 5 files
+  5 directories, 7 files
 #+end_example
 
 * Corollary
