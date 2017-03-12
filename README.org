@@ -1,0 +1,11 @@
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     Python Desing Patterns
+#+SUBTITLE:  exhaustive list
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+STARTUP: showall
+* Intro
+* Overview
+* Structure
+* Corollary
+
