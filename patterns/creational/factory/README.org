@@ -5,177 +5,190 @@
 #+LANGUAGE: en
 #+STARTUP: showall
 #+PROPERTY:header-args :results output :exports both
-*** Pet factory
-    #+BEGIN_HTML
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    <colgroup>
-    <col  class="org-left" />
-    <col  class="org-left" />
-    </colgroup>
-    <thead>
-    <tr>
-    <th scope="col" class="org-left">Pattern code</th>
-    <th scope="col" class="org-left">Test suite</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td class="org-left">
-    #+END_HTML
-    #+BEGIN_SRC python :tangle pet_factory.py
-      #!/usr/bin/env python
-      # -*- coding: utf-8 -*-
-      """
-      A pet factory abstraction
-      """
+
+* Pattern overview
+
+** Common features
+
+** Distinct features
+
+* Samples
+  For educational purposes it is convenient to look at the working
+  sample.
+** Pet factory
+   Creates some particular object out from arbitrary number already
+   defined.
+   
+   #+BEGIN_HTML
+   <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+   <colgroup>
+   <col  class="org-left" />
+   <col  class="org-left" />
+   </colgroup>
+   <thead>
+   <tr>
+   <th scope="col" class="org-left">Pattern code</th>
+   <th scope="col" class="org-left">Test suite</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+   <td class="org-left">
+   #+END_HTML
+   #+BEGIN_SRC python :tangle pet_factory.py
+     #!/usr/bin/env python
+     # -*- coding: utf-8 -*-
+     """
+     A pet factory abstraction
+     """
 
 
-      class Dog(object):
-          """A simple dog class"""
+     class Dog(object):
+         """A simple dog class"""
 
-          def __init__(self, name):
-              self._name = name
+         def __init__(self, name):
+             self._name = name
 
-          def speak(self):
-              return "Woof!"
-
-
-      class Cat(object):
-          """A simple cat class"""
-
-          def __init__(self, name):
-              self._name = name
-
-          def speak(self):
-              return "Meow!"
+         def speak(self):
+             return "Woof!"
 
 
-      def spawn_pet(pet="dog"):
-          """The factory method"""
-          pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
-          return pets[pet]
+     class Cat(object):
+         """A simple cat class"""
 
-      d = spawn_pet("dog")
-      print(d.speak())
-      c = spawn_pet("cat")
-      print(c.speak())
-    #+END_SRC
+         def __init__(self, name):
+             self._name = name
 
-    #+RESULTS:
-    : Woof!
-    : Meow!
-
-    #+BEGIN_HTML
-    <td class="org-left">
-    #+END_HTML
-    #+BEGIN_SRC python :tangle test_pet_factory.py
-      #!/usr/bin/env python
-      # -*- coding: utf-8 -*-
-      """
-      An attempt to illustrate how pet_factory works
-      """
-      import unittest
-      from pet_factory import Dog, Cat, spawn_pet
+         def speak(self):
+             return "Meow!"
 
 
-      class TestPetBehavior(unittest.TestCase):
+     def spawn_pet(pet="dog"):
+         """The factory method"""
+         pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
+         return pets[pet]
 
-          def setUp(self):
-              self.D = Dog('Hound')
+     d = spawn_pet("dog")
+     print(d.speak())
+     c = spawn_pet("cat")
+     print(c.speak())
+   #+END_SRC
 
-          def test_dog_init_name(self):
-              self.assertEqual(self.D._name, 'Hound')
+   #+RESULTS:
+   : Woof!
+   : Meow!
 
-          def test_dog_speak_ability(self):
-              self.assertEqual(self.D.speak(), 'Woof!')
-    #+END_SRC
-
-    #+RESULTS:
-    : Woof!
-    : Meow!
-
-    #+BEGIN_HTML
-    </tr>
-    </tbody>
-    #+END_HTML
-
-
-* Weapon factory
-    #+BEGIN_HTML
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    <colgroup>
-    <col  class="org-left" />
-    <col  class="org-left" />
-    </colgroup>
-    <thead>
-    <tr>
-    <th scope="col" class="org-left">Pattern code</th>
-    <th scope="col" class="org-left">Test suite</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td class="org-left">
-    #+END_HTML
-    #+BEGIN_SRC python :tangle weapon_factory.py
-      #!/usr/bin/env python
-      # -*- coding: utf-8 -*-
-      """
-      How to choose an arbitrary weapon
-      """
-      from random import randrange
+   #+BEGIN_HTML
+   <td class="org-left">
+   #+END_HTML
+   #+BEGIN_SRC python :tangle test_pet_factory.py
+     #!/usr/bin/env python
+     # -*- coding: utf-8 -*-
+     """
+     An attempt to illustrate how pet_factory works
+     """
+     import unittest
+     from pet_factory import Dog, Cat, spawn_pet
 
 
-      class Weapon(object):
-          name = None
-          cost = None
+     class TestPetBehavior(unittest.TestCase):
 
-          @staticmethod
-          def get_weapon(x):
-              if x == 0:
-                  return Knife()
-              if x == 1:
-                  return Gun()
+         def setUp(self):
+             self.D = Dog('Hound')
 
+         def test_dog_init_name(self):
+             self.assertEqual(self.D._name, 'Hound')
 
-      class Knife(Weapon):
-          name = 'Knife'
-          cost = 20.00
+         def test_dog_speak_ability(self):
+             self.assertEqual(self.D.speak(), 'Woof!')
+   #+END_SRC
 
+   #+RESULTS:
+   : Woof!
+   : Meow!
 
-      class Gun(Weapon):
-          name = 'Gun'
-          cost = 300.00
-
-
-      # Create 5 random weapons
-      for _ in range(5):
-          w = Weapon.get_weapon(randrange(2))
-          print(w.name, w.cost)
-    #+END_SRC
-
-    #+RESULTS:
-    : Gun 300.0
-    : Knife 20.0
-    : Knife 20.0
-    : Knife 20.0
-    : Gun 300.0
+   #+BEGIN_HTML
+   </tr>
+   </tbody>
+   #+END_HTML
 
 
-    #+BEGIN_HTML
-    <td class="org-left">
-    #+END_HTML
-    #+BEGIN_SRC python :tangle test_weapon_factory.py
-      #!/usr/bin/env python
-      # -*- coding: utf-8 -*-
-      """
-      An attempt to illustrate how sample_code works
-      """
-      import unittest
-    #+END_SRC
+** Weapon factory
+     #+BEGIN_HTML
+     <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+     <colgroup>
+     <col  class="org-left" />
+     <col  class="org-left" />
+     </colgroup>
+     <thead>
+     <tr>
+     <th scope="col" class="org-left">Pattern code</th>
+     <th scope="col" class="org-left">Test suite</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+     <td class="org-left">
+     #+END_HTML
+     #+BEGIN_SRC python :tangle weapon_factory.py
+       #!/usr/bin/env python
+       # -*- coding: utf-8 -*-
+       """
+       How to choose an arbitrary weapon
+       """
+       from random import randrange
 
 
-    #+BEGIN_HTML
-    </tr>
-    </tbody>
-    #+END_HTML
+       class Weapon(object):
+           name = None
+           cost = None
+
+           @staticmethod
+           def get_weapon(x):
+               if x == 0:
+                   return Knife()
+               if x == 1:
+                   return Gun()
+
+
+       class Knife(Weapon):
+           name = 'Knife'
+           cost = 20.00
+
+
+       class Gun(Weapon):
+           name = 'Gun'
+           cost = 300.00
+
+
+       # Create 5 random weapons
+       for _ in range(5):
+           w = Weapon.get_weapon(randrange(2))
+           print(w.name, w.cost)
+     #+END_SRC
+
+     #+RESULTS:
+     : Gun 300.0
+     : Knife 20.0
+     : Knife 20.0
+     : Knife 20.0
+     : Gun 300.0
+
+
+     #+BEGIN_HTML
+     <td class="org-left">
+     #+END_HTML
+     #+BEGIN_SRC python :tangle test_weapon_factory.py
+       #!/usr/bin/env python
+       # -*- coding: utf-8 -*-
+       """
+       An attempt to illustrate how sample_code works
+       """
+       import unittest
+     #+END_SRC
+
+
+     #+BEGIN_HTML
+     </tr>
+     </tbody>
+     #+END_HTML
