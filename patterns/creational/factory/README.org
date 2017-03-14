@@ -33,7 +33,7 @@
    #+HTML:<tbody>
    #+HTML:<tr>
    #+HTML:<td class="org-left">
-   #+BEGIN_SRC python :tangle pet_factory.py
+   #+BEGIN_SRC python :tangle pet_factory.py :exports both
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
      """
@@ -71,6 +71,11 @@
      c = spawn_pet("cat")
      print(c.speak())
    #+END_SRC
+
+   #+RESULTS:
+   : Woof!
+   : Meow!
+
    #+HTML:<td class="org-left">
    #+BEGIN_SRC python :tangle test_pet_factory.py
      #!/usr/bin/env python
@@ -99,22 +104,21 @@
 
 
 ** Weapon factory
-   #+BEGIN_HTML
-   <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-   <colgroup>
-   <col  class="org-left" />
-   <col  class="org-left" />
-   </colgroup>
-   <thead>
-   <tr>
-   <th scope="col" class="org-left">Pattern code</th>
-   <th scope="col" class="org-left">Test suite</th>
-   </tr>
-   </thead>
-   <tbody>
-   <tr>
-   <td class="org-left">
-   #+END_HTML
+
+   #+HTML:<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+   #+HTML:<colgroup>
+   #+HTML:<col  class="org-left" />
+   #+HTML:<col  class="org-left" />
+   #+HTML:</colgroup>
+   #+HTML:<thead>
+   #+HTML:<tr>
+   #+HTML:<th scope="col" class="org-left">Pattern code</th>
+   #+HTML:<th scope="col" class="org-left">Test suite</th>
+   #+HTML:</tr>
+   #+HTML:</thead>
+   #+HTML:<tbody>
+   #+HTML:<tr>
+   #+HTML:<td class="org-left">
    #+BEGIN_SRC python :tangle weapon_factory.py :exports both
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -153,16 +157,12 @@
    #+END_SRC
 
    #+RESULTS:
-   : Gun 300.0
-   : Knife 20.0
    : Knife 20.0
    : Knife 20.0
    : Gun 300.0
-
-
-   #+BEGIN_HTML
-   <td class="org-left">
-   #+END_HTML
+   : Gun 300.0
+   : Gun 300.0
+   #+HTML:<td class="org-left">
    #+BEGIN_SRC python :tangle test_weapon_factory.py
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -171,12 +171,7 @@
      """
      import unittest
    #+END_SRC
-
-
-   #+BEGIN_HTML
-   </tr>
-   </tbody>
-   #+END_HTML
-
+   #+HTML:</tr>
+   #+HTML:</tbody>
 
 ** Another factory
