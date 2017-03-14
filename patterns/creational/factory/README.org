@@ -15,27 +15,26 @@
    | sample | data  |
 
 ** Distinct features
-   #+HTML:
-   <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-   <colgroup>
-   <col  class="org-left" />
-   <col  class="org-left" />
-   </colgroup>
-   <thead>
-   <tr>
-   <th scope="col" class="org-left">Pattern code</th>
-   <th scope="col" class="org-left">Test suite</th>
-   </tr>
-   </thead>
-   <tbody>
-   <tr>
-   <td class="org-left">
-   Some text
-   <td class="org-left">
-   Another text
-   </tr>
-   </tbody>
-   #+END_HTML
+
+   #+HTML:<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+   #+HTML:<colgroup>
+   #+HTML:<col  class="org-left" />
+   #+HTML:<col  class="org-left" />
+   #+HTML:</colgroup>
+   #+HTML:<thead>
+   #+HTML:<tr>
+   #+HTML:<th scope="col" class="org-left">Pattern code</th>
+   #+HTML:<th scope="col" class="org-left">Test suite</th>
+   #+HTML:</tr>
+   #+HTML:</thead>
+   #+HTML:<tbody>
+   #+HTML:<tr>
+   #+HTML:<td class="org-left">
+   #+HTML:Some text
+   #+HTML:<td class="org-left">
+   #+HTML:Another text
+   #+HTML:</tr>
+   #+HTML:</tbody>
 
 
 * Samples
