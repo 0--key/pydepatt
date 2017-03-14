@@ -44,22 +44,20 @@
    Creates some particular object out from arbitrary number already
    defined.
    
-   #+BEGIN_HTML
-   <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-   <colgroup>
-   <col  class="org-left" />
-   <col  class="org-left" />
-   </colgroup>
-   <thead>
-   <tr>
-   <th scope="col" class="org-left">Pattern code</th>
-   <th scope="col" class="org-left">Test suite</th>
-   </tr>
-   </thead>
-   <tbody>
-   <tr>
-   <td class="org-left">
-   #+END_HTML
+   #+HTML:<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+   #+HTML:<colgroup>
+   #+HTML:<col  class="org-left" />
+   #+HTML:<col  class="org-left" />
+   #+HTML:</colgroup>
+   #+HTML:<thead>
+   #+HTML:<tr>
+   #+HTML:<th scope="col" class="org-left">Pattern code</th>
+   #+HTML:<th scope="col" class="org-left">Test suite</th>
+   #+HTML:</tr>
+   #+HTML:</thead>
+   #+HTML:<tbody>
+   #+HTML:<tr>
+   #+HTML:<td class="org-left">
    #+BEGIN_SRC python :tangle pet_factory.py
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -98,14 +96,7 @@
      c = spawn_pet("cat")
      print(c.speak())
    #+END_SRC
-
-   #+RESULTS:
-   : Woof!
-   : Meow!
-
-   #+BEGIN_HTML
-   <td class="org-left">
-   #+END_HTML
+   #+HTML:<td class="org-left">
    #+BEGIN_SRC python :tangle test_pet_factory.py
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -127,6 +118,34 @@
          def test_dog_speak_ability(self):
              self.assertEqual(self.D.speak(), 'Woof!')
    #+END_SRC
+   #+HTML:</tr>
+   #+HTML:</tbody>
+
+
+   #+BEGIN_HTML
+   <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+   <colgroup>
+   <col  class="org-left" />
+   <col  class="org-left" />
+   </colgroup>
+   <thead>
+   <tr>
+   <th scope="col" class="org-left">Pattern code</th>
+   <th scope="col" class="org-left">Test suite</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+   <td class="org-left">
+   #+END_HTML
+
+   #+RESULTS:
+   : Woof!
+   : Meow!
+
+   #+BEGIN_HTML
+   <td class="org-left">
+   #+END_HTML
 
    #+RESULTS:
    : Woof!
