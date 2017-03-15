@@ -16,9 +16,8 @@
   For educational purposes it is convenient to look at the working
   sample.
 ** Pet factory
-   Creates some particular object out from arbitrary number already
-   defined.
-   
+   Creates some particular animal out from arbitrary number already
+   defined pets.
    #+HTML:<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
    #+HTML:<colgroup>
    #+HTML:<col  class="org-left" />
@@ -101,10 +100,7 @@
    #+HTML:</tr>
    #+HTML:</tbody>
 
-
-
 ** Weapon factory
-
    #+HTML:<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
    #+HTML:<colgroup>
    #+HTML:<col  class="org-left" />
@@ -175,3 +171,22 @@
    #+HTML:</tbody>
 
 ** Another factory
+   #+HTML:<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+   #+HTML:<colgroup>
+   #+HTML:<col  class="org-left" />
+   #+HTML:<col  class="org-left" />
+   #+HTML:</colgroup>
+   #+HTML:<thead>
+   #+HTML:<tr>
+   #+HTML:<th scope="col" class="org-left">Pattern code</th>
+   #+HTML:<th scope="col" class="org-left">Test suite</th>
+   #+HTML:</tr>
+   #+HTML:</thead>
+   #+HTML:<tbody>
+   #+HTML:<tr>
+   #+HTML:<td class="org-left">
+   #+HTML:Some text
+   #+HTML:<td class="org-left">
+   #+HTML:Another text
+   #+HTML:</tr>
+   #+HTML:</tbody>
