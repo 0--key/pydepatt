@@ -15,6 +15,9 @@
 * Samples
   For educational purposes it is convenient to look at the working
   sample.
+  | test | table |
+  |------+-------|
+  | some | data  |
 ** Pet factory
    Creates some particular animal out from arbitrary number already
    defined pets.
