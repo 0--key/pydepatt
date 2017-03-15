@@ -21,16 +21,11 @@
 ** Pet factory
    Creates some particular animal out from arbitrary number already
    defined pets.
-   #+HTML:<table border="2" cellspacing="0" cellpadding="6">
-   #+HTML:<thead>
-   #+HTML:<tr>
-   #+HTML:<th scope="col" class="org-left">Pattern code</th>
-   #+HTML:<th scope="col" class="org-left">Test suite</th>
-   #+HTML:</tr>
-   #+HTML:</thead>
-   #+HTML:<tbody>
-   #+HTML:<tr>
-   #+HTML:<td class="org-left">
+   #+BEGIN_HTML
+   <table>
+   <tbody><tr><th>Pattern code</th><th>Test suite</th></tr>
+   <tr><td>
+   #+END_HTML
    #+BEGIN_SRC python :tangle pet_factory.py :exports both
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -73,8 +68,9 @@
    #+RESULTS:
    : Woof!
    : Meow!
-
-   #+HTML:<td class="org-left">
+   #+BEGIN_HTML
+   </td><td>
+   #+END_HTML
    #+BEGIN_SRC python :tangle test_pet_factory.py
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -95,9 +91,11 @@
 
          def test_dog_speak_ability(self):
              self.assertEqual(self.D.speak(), 'Woof!')
-   #+END_SRC
-   #+HTML:</tr>
-   #+HTML:</tbody>
+   #+END_SRC   
+   #+BEGIN_HTML
+   </td></tr>
+   </tbody></table>
+   #+END_HTML
 
 ** Weapon factory
    #+HTML:<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
