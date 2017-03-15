@@ -21,11 +21,7 @@
 ** Pet factory
    Creates some particular animal out from arbitrary number already
    defined pets.
-   #+HTML:<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-   #+HTML:<colgroup>
-   #+HTML:<col  class="org-left" />
-   #+HTML:<col  class="org-left" />
-   #+HTML:</colgroup>
+   #+HTML:<table border="2" cellspacing="0" cellpadding="6">
    #+HTML:<thead>
    #+HTML:<tr>
    #+HTML:<th scope="col" class="org-left">Pattern code</th>
