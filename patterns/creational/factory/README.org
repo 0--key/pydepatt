@@ -5,7 +5,6 @@
 #+LANGUAGE: en
 #+STARTUP: showall
 #+PROPERTY:header-args :results output :exports both
-#+TOC: headlines 2
 
 * Pattern overview
 
