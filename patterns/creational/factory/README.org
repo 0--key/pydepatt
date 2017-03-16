@@ -20,7 +20,7 @@
    Creates some particular animal out from arbitrary number already
    defined pets.
 
-   #+HTML: <table><tbody><tr><th>Pattern code</th><th>Test suite</th></tr><tr><td>
+   #+HTML: <table><tbody><tr><th>Pattern code</th><th>Test suite</th></tr><tr><td valign="top">
    #+BEGIN_SRC python :tangle pet_factory.py :exports both
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -63,7 +63,7 @@
    #+RESULTS:
    : Woof!
    : Meow!
-   #+HTML: </td><td>
+   #+HTML: </td><td valign="top">
    #+BEGIN_SRC python :tangle test_pet_factory.py
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -89,7 +89,7 @@
 
 ** Weapon factory
 
-   #+HTML: <table><tbody><tr><th>Pattern code</th><th>Test suite</th></tr><tr><td>
+   #+HTML: <table><tbody><tr><th>Pattern code</th><th>Test suite</th></tr><tr><td valign="top">
 
    #+BEGIN_SRC python :tangle weapon_factory.py :exports both
      #!/usr/bin/env python
@@ -135,7 +135,7 @@
    : Gun 300.0
    : Gun 300.0
 
-   #+HTML: </td><td>
+   #+HTML: </td><td valign="top">
 
    #+BEGIN_SRC python :tangle test_weapon_factory.py
      #!/usr/bin/env python
