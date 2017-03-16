@@ -98,15 +98,7 @@
 ** Weapon factory
    #+BEGIN_HTML
    <table>
-   <tbody><tr><th>
-   #+END_HTML
-   Pattern code
-   #+BEGIN_HTML
-   </th><th>
-   #+END_HTML
-   Test suite
-   #+BEGIN_HTML
-   </th></tr>
+   <tbody><tr><th>Pattern code</th><th>Test suite</th></tr>
    <tr><td>
    #+END_HTML
    #+BEGIN_SRC python :tangle weapon_factory.py :exports both
