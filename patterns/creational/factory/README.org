@@ -19,11 +19,8 @@
 ** Pet factory
    Creates some particular animal out from arbitrary number already
    defined pets.
-   #+BEGIN_HTML
-   <table>
-   <tbody><tr><th>Pattern code</th><th>Test suite</th></tr>
-   <tr><td>
-   #+END_HTML
+
+   #+HTML: <table><tbody><tr><th>Pattern code</th><th>Test suite</th></tr><tr><td>
    #+BEGIN_SRC python :tangle pet_factory.py :exports both
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -66,9 +63,7 @@
    #+RESULTS:
    : Woof!
    : Meow!
-   #+BEGIN_HTML
-   </td><td>
-   #+END_HTML
+   #+HTML: </td><td>
    #+BEGIN_SRC python :tangle test_pet_factory.py
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -90,10 +85,7 @@
          def test_dog_speak_ability(self):
              self.assertEqual(self.D.speak(), 'Woof!')
    #+END_SRC   
-   #+BEGIN_HTML
-   </td></tr>
-   </tbody></table>
-   #+END_HTML
+   #+HTML: </td></tr></tbody></table>
 
 ** Weapon factory
    #+BEGIN_HTML
