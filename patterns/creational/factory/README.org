@@ -54,7 +54,8 @@
    Creates some particular animal out from arbitrary number already
    defined pets.
 
-   #+HTML: <table><tbody><tr><th>Pattern code</th><th>Test suite</th></tr><tr><td valign="top">
+   #+HTML: <table><tbody><tr><th>Pattern code</th>
+   #+HTML: <th>Test suite</th></tr><tr><td valign="top">
    #+BEGIN_SRC python :tangle pet_factory.py :exports both
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
@@ -85,7 +86,8 @@
 
      def spawn_pet(pet="dog"):
          """The factory method"""
-         pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
+         pets = dict(dog=Dog("Hope"),
+                     cat=Cat("Peace"))
          return pets[pet]
 
      d = spawn_pet("dog")
@@ -123,7 +125,8 @@
 
 ** Weapon factory
 
-   #+HTML: <table><tbody><tr><th>Pattern code</th><th>Test suite</th></tr><tr><td valign="top">
+   #+HTML: <table><tbody><tr><th>Pattern code</th>
+   #+HTML: <th>Test suite</th></tr><tr><td valign="top">
 
    #+BEGIN_SRC python :tangle weapon_factory.py :exports both
      #!/usr/bin/env python
@@ -182,4 +185,4 @@
 
    #+HTML: </td></tr></tbody></table>
 
-** Another factory
+** Pizza factory
