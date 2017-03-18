@@ -6,9 +6,10 @@
 #+STARTUP: showall
 #+PROPERTY:header-args :results output :exports both
 
+Hope [[http://0--key.github.io/python3/design/patterns/creational/factory.html][this page]] could elucidate the same issue in a bit different
+manner.
+
 * Pattern overview
-  Hope [[http://0--key.github.io/python3/design/patterns/creational/factory.html][this page]] could elucidate the same issue in a bit different
-  manner.
 
 ** Pattern Name and Classification:
    A descriptive and unique name that helps in identifying and
