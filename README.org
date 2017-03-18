@@ -35,6 +35,7 @@
   │   │   │   ├── pet_factory.py
   │   │   │   ├── README.org
   │   │   │   ├── test_pet_factory.py
+  │   │   │   ├── test_weapon_factory.py
   │   │   │   └── weapon_factory.py
   │   │   └── README.org
   │   ├── README.org
@@ -42,7 +43,7 @@
   │       └── README.org
   └── README.org
 
-  5 directories, 9 files
+  5 directories, 10 files
 #+end_example
 
 * Corollary
