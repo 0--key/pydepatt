@@ -4,6 +4,7 @@
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
 #+STARTUP: showall
+
 * Intro
 ** Intention
    The aim and passion of this repository is a knowledge taxonomy.
@@ -14,7 +15,8 @@
    /Keep clear, please./
 * Overview
 ** Python3 only
-   It is a modern and seems would be the one actual soon.
+   It is a contemporary version and seems it is used to become the one
+   very soon.
 ** Methodology
 *** Brief survey
 *** Several examples
