@@ -16,4 +16,4 @@ class TestPetBehavior(unittest.TestCase):
         self.assertEqual(self.D._name, 'Hound')
 
     def test_dog_speak_ability(self):
-        self.assertEqual(self.D.speak(), 'Moof!')
+        self.assertEqual(self.D.speak(), 'Woof!')

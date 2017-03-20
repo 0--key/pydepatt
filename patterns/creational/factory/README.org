@@ -122,7 +122,7 @@ manner.
              self.assertEqual(self.D._name, 'Hound')
 
          def test_dog_speak_ability(self):
-             self.assertEqual(self.D.speak(), 'Moof!')
+             self.assertEqual(self.D.speak(), 'Woof!')
    #+END_SRC   
    #+HTML: </td></tr></tbody></table>
 
