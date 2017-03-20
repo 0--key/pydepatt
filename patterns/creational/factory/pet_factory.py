@@ -27,7 +27,8 @@ class Cat(object):
 
 def spawn_pet(pet="dog"):
     """The factory method"""
-    pets = dict(dog=Dog("Hope"), cat=Cat("Peace"))
+    pets = dict(dog=Dog("Hope"),
+                cat=Cat("Peace"))
     return pets[pet]
 
 d = spawn_pet("dog")
