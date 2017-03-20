@@ -53,7 +53,7 @@ manner.
   For educational purposes it is convenient to look at the working
   sample.
 
-** Pet factory
+** TODO Pet factory
    Creates some particular animal out from arbitrary number already
    defined pets.
 
@@ -122,7 +122,7 @@ manner.
              self.assertEqual(self.D._name, 'Hound')
 
          def test_dog_speak_ability(self):
-             self.assertEqual(self.D.speak(), 'Woof!')
+             self.assertEqual(self.D.speak(), 'Moof!')
    #+END_SRC   
    #+HTML: </td></tr></tbody></table>
 
