@@ -14,11 +14,14 @@ manner.
 ** Pattern Name and Classification
    A descriptive and unique name that helps in identifying and
    referring to the pattern.
+
 ** Intent
-   A description of the goal behind the pattern and the reason for
-   using it.
+   Provide an interface for creating families of related
+   or dependent objects without specifying their concrete classes.
+
 ** Also Known As
-   Other names for the pattern.
+   /kit/
+
 ** Motivation (Forces)
    A scenario consisting of a problem and a context in which this
    pattern can be used.
