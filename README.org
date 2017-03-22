@@ -35,6 +35,29 @@
    identified, and the first implementation was done with respect to the Java
    program language. Design patterns are discoveries and not an invention in
    themselves.
+
+** Stem principles
+
+*** The open/close principle
+    states that classes or objects and methods should be open for
+    extension but closed for modifications.
+
+*** The inversion of control principle
+    states that high-level modules shouldn't be dependent on low-level
+    modules; they should both be dependent on abstractions. Details
+    should depend on abstractions and not the other way round.
+
+*** The interface segregation principle
+    clients should not be forced to depend on interfaces they don't
+    use.
+
+*** The single responsibility principle
+    states, a class should have only one reason to change.
+
+*** The substitution principle
+    states that derived classes must be able to completely substitute
+    the base classes.
+
 ** Target audience
    Anybody who are curious in studying and appreciate clarity simultaneously.
 ** Contribution
