@@ -66,18 +66,23 @@
    - They have reliability and dependence
 
 ** Target audience
-   Anybody who are curious in studying and appreciate clarity simultaneously.
+   Anybody who are curious in studying and simultaneously appreciate a
+   clarity.
+
 ** Contribution
    Please feel free to do any corrections, amendments or suggestions.
    /Keep clear, please./
 * Overview
+
 ** Python3 only
    It is a contemporary version and seems it is used to become the one
    very soon.
+
 ** Methodology
 *** Brief survey
 *** Several examples
 *** Test suite
+
 * Structure
   #+BEGIN_SRC shell :results output :exports results
   tree -I '*~|#*|*.pyc|__pycache__'

@@ -6,41 +6,19 @@
 #+STARTUP: showall
 #+PROPERTY:header-args :results output :exports both
 
-- Common properties
-  + They work on the basis of how objects can be created
-  + They isolate the details of object creation
-  + Code is independent of the type of object to be created
+* Description
+  Creational design patterns abstract the instantiation process. They help
+  make a system independent of how its objects are created, composed, and
+  represented. A class creational pattern uses inheritance to vary the class
+  that’s instantiated, whereas an object creational pattern will delegate
+  instantiation to another object.
 
-* Samples
+* Common properties
 
-** Simple
-   #+BEGIN_SRC python
-   print("Its python src rendering test")
-   #+END_SRC
+** They work on the basis of how objects can be created
 
-   #+RESULTS:
-   : Its python src rendering test
+** They isolate the details of object creation
 
-** Indentation hightlight
-   #+BEGIN_SRC python
-     for i in range (0, 12, 2):
-         print('Next string')
-         # comments there
-         print(i)
-   #+END_SRC
+** Code is independent of the type of object to be created
 
-   #+RESULTS:
-   #+begin_example
-   Next string
-   0
-   Next string
-   2
-   Next string
-   4
-   Next string
-   6
-   Next string
-   8
-   Next string
-   10
-#+end_example
+
