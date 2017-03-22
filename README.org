@@ -25,7 +25,16 @@
    #+END_EXPORT
    #+END_QUOTE
 ** Intention
-   The aim and passion of this repository is a knowledge taxonomy.
+   Design patterns were first introduced by GoF (Gang of Four), where they
+   mentioned them as being solutions to given problems. If you would like to
+   know more, GoF refers to the four authors of the book, Design Patterns:
+   Elements of Reusable Object-Oriented Software. The book's authors are Erich
+   Gamma, Richard Helm, Ralph Johnson, and John Vlissides, with a foreword by
+   Grady Booch. This book covers software engineering solutions to the commonly
+   occurring problems in software design. There were 23 design patterns first
+   identified, and the first implementation was done with respect to the Java
+   program language. Design patterns are discoveries and not an invention in
+   themselves.
 ** Target audience
    Anybody who are curious in studying and appreciate clarity simultaneously.
 ** Contribution
