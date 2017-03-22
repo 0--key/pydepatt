@@ -58,6 +58,13 @@
     states that derived classes must be able to completely substitute
     the base classes.
 
+** Advantages of design patterns
+   - They are reusable across multiple projects
+   - The architectural level of problems can be solved
+   - They are time-tested and well-proven, which is the experience of
+     developers and architects
+   - They have reliability and dependence
+
 ** Target audience
    Anybody who are curious in studying and appreciate clarity simultaneously.
 ** Contribution
