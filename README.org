@@ -91,19 +91,27 @@
   │   ├── behavioral
   │   │   └── README.org
   │   ├── creational
+  │   │   ├── abstract_factory
+  │   │   │   ├── pet_factory.py
+  │   │   │   ├── README.org
+  │   │   │   └── test_pet_factory.py
+  │   │   ├── builder
   │   │   ├── factory
   │   │   │   ├── pet_factory.py
   │   │   │   ├── README.org
   │   │   │   ├── test_pet_factory.py
   │   │   │   ├── test_weapon_factory.py
   │   │   │   └── weapon_factory.py
-  │   │   └── README.org
+  │   │   ├── factory_method
+  │   │   ├── prototype
+  │   │   ├── README.org
+  │   │   └── singleton
   │   ├── README.org
   │   └── structural
   │       └── README.org
   └── README.org
 
-  5 directories, 10 files
+  10 directories, 13 files
 #+end_example
 
 * Corollary
