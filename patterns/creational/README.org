@@ -1,5 +1,5 @@
 #+AUTHOR:    Anton S. Kosinov
-#+TITLE:     Creational Patterns Desing
+#+TITLE:     Creational Patterns Design
 #+SUBTITLE:  Brief description
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
