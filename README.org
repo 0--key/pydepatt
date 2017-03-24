@@ -80,7 +80,7 @@
 *** Test suite
 
 * Structure
-  #+BEGIN_SRC shell :results output :exports results
+  #+BEGIN_SRC shell :results output :exports results :eval no-export
   tree -I '*~|#*|*.pyc|__pycache__'
   #+END_SRC
 
