@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-An attempt to illustrate how pet_factory works
+An attempt to illustrate how pet shop works
 """
 import unittest
 
