@@ -8,29 +8,32 @@
 * Intro
 
 ** Foreword
+
    #+BEGIN_QUOTE
    Controlling complexity is the essence of computer programming.
    #+HTML: <p align="right">
    Brian Kernighan
    #+HTML: </p>
 
-   All problems in computer science can be solved by another level
-   of indirection (abstraction).
+   All problems in computer science can be solved by another level of
+   indirection (abstraction).
    #+HTML: <p align="right">
    David Wheeler
    #+HTML: </p>
    #+END_QUOTE
 ** Intention
-   Design patterns were first introduced by GoF (Gang of Four), where they
-   mentioned them as being solutions to given problems. If you would like to
-   know more, GoF refers to the four authors of the book, Design Patterns:
-   Elements of Reusable Object-Oriented Software. The book's authors are Erich
-   Gamma, Richard Helm, Ralph Johnson, and John Vlissides, with a foreword by
-   Grady Booch. This book covers software engineering solutions to the commonly
-   occurring problems in software design. There were 23 design patterns first
-   identified, and the first implementation was done with respect to the Java
-   program language. Design patterns are discoveries and not an invention in
-   themselves.
+
+   Design patterns were first introduced by GoF (Gang of Four), where
+   they mentioned them as being solutions to given problems. If you
+   would like to know more, GoF refers to the four authors of the
+   book, Design Patterns: Elements of Reusable Object-Oriented
+   Software. The book's authors are Erich Gamma, Richard Helm, Ralph
+   Johnson, and John Vlissides, with a foreword by Grady Booch. This
+   book covers software engineering solutions to the commonly
+   occurring problems in software design. There were 23 design
+   patterns first identified, and the first implementation was done
+   with respect to the Java program language. Design patterns are
+   discoveries and not an invention in themselves.
 
 ** Stem principles
 
