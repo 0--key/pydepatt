@@ -74,7 +74,7 @@ manner.
 
    #+HTML: </td><td valign="top">
 
-   #+BEGIN_SRC python :tangle test_pet_factory.py
+   #+BEGIN_SRC python :tangle test_abstract_factory.py
      #!/usr/bin/env python
      # -*- coding: utf-8 -*-
      """
