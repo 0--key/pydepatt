@@ -65,6 +65,17 @@
    flexibility, extensibility, or portability. Listing these
    consequences explicitly helps you understand and evaluate them.
 
+
+* Classification
+
+  Patterns can be classified in different categories, of which the
+  main categories are:
+
+  - Creational Patterns,
+  - Structural Patterns and
+  - Behavioral Patterns.
+
+
 * Footnotes
 
 [fn:GoF] https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
