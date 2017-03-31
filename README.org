@@ -21,6 +21,26 @@
    David Wheeler
    #+HTML: </p>
    #+END_QUOTE
+
+   The term /Design Patterns/ can confuse you at first, or it can seem
+   like something incredibly difficult. In fact it is nothing more
+   than convenient ways of identifying, labelling and coding general
+   solutions to recurring design problems.
+
+   So design patterns are nothing more than commonly occurring
+   patterns in design that are repeatable and generalist enough to be
+   written down and named as software design constructs that all can
+   commonly identify and apply. Note however that a design pattern
+   refers to the logical structure of the code, what it does and how
+   it addresses the issues, not on direct code portability across
+   projects, but in the portability of the way design issues can be
+   addressed.
+
+   Imagine yourself working in a project team and someone just wrote a
+   class and is trying to explain to you that only one instance is
+   allowed. Instead the person could simply say "The class I just
+   wrote is a Singleton".
+
 ** Intention
 
    Design patterns were first introduced by GoF (Gang of Four), where
