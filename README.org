@@ -104,7 +104,7 @@
 
 * Structure
   #+BEGIN_SRC shell :results output :exports results :eval no-export
-  tree -I '*~|#*|*.pyc|__pycache__'
+  tree -I '*~|#*|*.pyc|__pycache__|*flymake*'
   #+END_SRC
 
   #+RESULTS:
@@ -115,14 +115,16 @@
   │   │   └── README.org
   │   ├── creational
   │   │   ├── abstract_factory
-  │   │   │   ├── pet_factory.py
+  │   │   │   ├── pet_shop.py
   │   │   │   ├── README.org
-  │   │   │   └── test_pet_factory.py
+  │   │   │   └── test_abstract_factory.py
   │   │   ├── builder
   │   │   ├── factory
   │   │   │   ├── pet_factory.py
   │   │   │   ├── README.org
+  │   │   │   ├── sophisticated_pet_factory.py
   │   │   │   ├── test_pet_factory.py
+  │   │   │   ├── test_sophisticated_pet_factory.py
   │   │   │   ├── test_weapon_factory.py
   │   │   │   └── weapon_factory.py
   │   │   ├── factory_method
@@ -134,7 +136,7 @@
   │       └── README.org
   └── README.org
 
-  10 directories, 13 files
+  10 directories, 15 files
 #+end_example
 
 * Corollary
