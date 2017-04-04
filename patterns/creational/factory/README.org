@@ -127,6 +127,71 @@ manner.
    #+END_SRC   
    #+HTML: </td></tr></tbody></table>
 
+** Sophisticated pet factory
+   #+HTML: <table><tbody><tr><th>Pattern code</th>
+   #+HTML: <th>Test suite</th></tr><tr><td valign="top">
+   #+BEGIN_SRC python :tangle sophisticated_pet_factory.py :exports both :eval no-export
+     #!/usr/bin/env python
+     # -*- coding: utf-8 -*-
+     """
+     A pet factory abstraction
+     """
+     from abc import ABCMeta, abstractmethod
+
+
+     class Animal(metaclass=ABCMeta):
+
+         @abstractmethod
+         def do_say(self):
+             pass
+
+
+     class Dog(Animal):
+
+         def do_say(self):
+             return "Bhow Bhow!!"
+
+
+     class Cat(Animal):
+
+         def do_say(self):
+             return "Meow Meow!!"
+
+
+     class PetFactory(object):
+
+         def make_clamor(self, object_type):
+             return eval(object_type)().do_say()
+
+     # client code
+     # if __name__ == '__main__':
+     #     ff = ForestFactory()
+     #     animal = input("Which animal should make_sound Dog or Cat?")
+     #     ff.make_sound(animal)
+   #+END_SRC
+   #+HTML: </td><td valign="top">
+   #+BEGIN_SRC python :tangle test_sophisticated_pet_factory.py
+     #!/usr/bin/env python
+     # -*- coding: utf-8 -*-
+     """
+     An attempt to illustrate how pet_factory works
+     """
+     import unittest
+     from sophisticated_pet_factory import Dog, Cat, PetFactory
+
+
+     class TestPetBehavior(unittest.TestCase):
+
+         def setUp(self):
+             self.pet_factory = PetFactory()
+             # self.cat = PetFactory('Cat')
+
+         def test_dog_speak_ability(self):
+             self.assertEqual(self.pet_factory.make_clamor('Dog'), 'Bhow Bhow!!')
+   #+END_SRC   
+   #+HTML: </td></tr></tbody></table>
+
+   
 ** Weapon factory
 
    #+HTML: <table><tbody><tr><th>Pattern code</th>
