@@ -54,7 +54,7 @@ manner.
   be helpful to compose a /test suite/ for testing the pattern
   features and collocate it nearby pattern source code.
 
-** Pet factory
+** Pet factory primitive
    Creates some particular animal out from arbitrary number preliminarily
    defined pets.
 

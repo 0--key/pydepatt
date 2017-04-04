@@ -16,8 +16,12 @@ manner.
    referring to the pattern.
 
 ** Intent
-   Provide an interface for creating families of related
-   or dependent objects without specifying their concrete classes.
+   Provide an interface for creating families of related or dependent
+   objects without specifying their concrete classes.
+
+   In other words AF is an interface to create related objects without
+   specifying/exposing their classes. The pattern provides objects of
+   another factory, which internally creates other objects.
 
 ** Also Known As
    /kit/
