@@ -29,9 +29,3 @@ class PetFactory(object):
 
     def make_clamor(self, object_type):
         return eval(object_type)().do_say()
-
-# client code
-# if __name__ == '__main__':
-#     ff = ForestFactory()
-#     animal = input("Which animal should make_sound Dog or Cat?")
-#     ff.make_sound(animal)
