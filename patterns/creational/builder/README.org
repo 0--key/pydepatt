@@ -1,0 +1,94 @@
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     A design pattern sample
+#+SUBTITLE:  pattern motto
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+STARTUP: showall
+#+PROPERTY:header-args :results output :exports both
+
+Hope [[http://0--key.github.io/python3/design/patterns/creational/builder.html][this page]] could elucidate this pattern in a bit explicit
+manner.
+
+* Pattern overview
+
+** Pattern Name and Classification
+   A descriptive and unique name that helps in identifying and
+   referring to the pattern.
+** Intent
+   A description of the goal behind the pattern and the reason for
+   using it.
+** Also Known As
+   Other names for the pattern.
+** Motivation (Forces)
+   A scenario consisting of a problem and a context in which this
+   pattern can be used.
+** Applicability
+   Situations in which this pattern is usable; the context for the
+   pattern.
+** Structure
+   A graphical representation of the pattern. Class diagrams and
+   Interaction diagrams may be used for this purpose.
+** Participants
+   A listing of the classes and objects used in the pattern and their
+   roles in the design.
+** Collaboration
+   A description of how classes and objects used in the pattern
+   interact with each other.
+** Implementation
+   A description of an implementation of the pattern; the solution
+   part of the pattern.
+** Consequences
+   A description of the results, side effects, and trade offs caused
+   by using the pattern.
+** Known Uses
+   Examples of real usages of the pattern.
+** Related Patterns
+   Other patterns that have some relationship with the pattern;
+   discussion of the differences between the pattern and similar
+   patterns.
+
+
+
+* Samples
+  For educational purposes it would be priceless to look at the
+  working code sample. Exactly to achieve a stunning clarity it might
+  be helpful to compose a /test suite/ for testing the pattern
+  features and dispose it nearby the pattern source code.
+
+** Pet factory
+   Creates some particular animal out from arbitrary number preliminary
+   defined pets.
+
+   #+HTML: <table><tbody><tr><th>Pattern code</th>
+   #+HTML: <th>Test suite</th></tr><tr><td valign="top">
+   #+BEGIN_SRC python :tangle pet_factory.py :exports both
+     #!/usr/bin/env python
+     # -*- coding: utf-8 -*-
+     """
+     A pet factory abstraction
+     """
+   #+END_SRC
+
+   #+HTML: </td><td valign="top">
+
+   #+BEGIN_SRC python :tangle test_pet_factory.py
+     #!/usr/bin/env python
+     # -*- coding: utf-8 -*-
+     """
+     An attempt to illustrate how pet_factory works
+     """
+     import unittest
+
+
+     class TestSimpleBehavior(unittest.TestCase):
+
+         def setUp(self):
+             pass
+
+         def tearDown(self):
+             pass
+
+   #+END_SRC
+
+   #+HTML: </td></tr></tbody></table>
+
