@@ -175,6 +175,10 @@ manner.
      print(building)
    #+END_SRC
 
+   #+RESULTS:
+   : Floor: One | Size: Big
+   : Floor: More than One | Size: Small
+
    #+HTML: </td><td valign="top">
 
    #+BEGIN_SRC python :tangle test_rooms_builder.py
