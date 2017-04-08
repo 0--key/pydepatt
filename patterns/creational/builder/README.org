@@ -60,9 +60,17 @@ manner.
     - includes classes that define the constituent parts, including
       interfaces for assembling the parts into the final result.
 
+
 ** Collaboration
-   A description of how classes and objects used in the pattern
-   interact with each other.
+
+   - The client creates the Director object and configures it with the
+     desired Builder object.
+   - Director notifies the builder whenever a part of the product
+     should be built.
+   - Builder handles requests from the director and adds parts to the
+     product.
+   - The client retrieves the product from the builder.
+
 ** Implementation
    A description of an implementation of the pattern; the solution
    part of the pattern.
