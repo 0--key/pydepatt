@@ -12,24 +12,43 @@ manner.
 * Pattern overview
 
 ** Pattern Name and Classification
-   A descriptive and unique name that helps in identifying and
-   referring to the pattern.
+
+   The builder pattern is an object creation software design pattern.
+   Unlike the abstract factory pattern and the factory method pattern
+   whose intention is to enable polymorphism, the intention of the
+   builder pattern is to find a solution to the telescoping
+   constructor anti-pattern. The telescoping constructor anti-pattern
+   occurs when the increase of object constructor parameter
+   combination leads to an exponential list of constructors. Instead
+   of using numerous constructors, the builder pattern uses another
+   object, a /builder/, that receives each initialization parameter
+   step by step and then returns the resulting constructed object at
+   once.
+
 ** Intent
 
-   #+BEGIN_QUOTE
    Separate the construction of a complex object from its
    representation so that the same construction process can create
    different representations.
-   #+END_QUOTE
 
 ** Also Known As
+
    Other names for the pattern.
+
 ** Motivation (Forces)
-   A scenario consisting of a problem and a context in which this
-   pattern can be used.
+
+   The main premise for design is an excessive number of constructors.
+
 ** Applicability
-   Situations in which this pattern is usable; the context for the
-   pattern.
+
+   =Builder= often builds a =Composite=. Often, designs start out
+   using =Factory Method= (less complicated, more customizable,
+   subclasses proliferate) and evolve toward =Abstract Factory=,
+   =Prototype=, or =Builder= (more flexible, more complex) as the
+   designer discovers where more flexibility is needed. Sometimes
+   creational patterns are complementary: =Builder= can use one of the
+   other patterns to implement which components are built.
+
 ** Structure
    A graphical representation of the pattern. Class diagrams and
    Interaction diagrams may be used for this purpose.
